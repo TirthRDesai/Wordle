@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Mooli&display=swap");
+
+body {
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	place-items: center;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	justify-content: space-evenly;
+	background-color: black;
+}
+
+#containerDiv {
+	width: 60%;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #ddd0c8;
+}
+
+#feedbackDiv {
+	width: 30%;
+	height: calc(80% - 20px);
+	padding: 20px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	border-radius: 40px;
+	align-items: center;
+	overflow-x: hidden;
+	overflow-wrap: break-word;
+	background-color: green;
+}
+
+.trialDiv {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+	padding: 10px 0px;
+	z-index: 1;
+	visibility: hidden;
+	height: 100px;
+}
+
+.inputWordleLetter {
+	width: 15%;
+	height: 90%;
+	background-color: transparent;
+	text-align: center;
+	font-size: 40px;
+	font-family: "Bricolage Grotesque", sans-serif;
+	font-family: "Mooli", sans-serif;
+	border: none;
+	border-bottom: 2px solid black;
+	border-radius: 10px;
+	color: white;
+	outline: none;
+}
+
+#hintDiv {
+	width: 90%;
+	max-width: 90%;
+	margin: auto;
+	height: 50%;
+	background-color: yellow;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	overflow-wrap: break-word;
+	padding: 0px 20px;
+}
+
+#hintDiv::-webkit-scrollbar {
+	display: none;
+}
+
+#errorDiv {
+	width: 90%;
+	max-width: 90%;
+	margin: auto;
+	background-color: antiquewhite;
+	height: 50%;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0px 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+#hintDiv p {
+	font-family: "Bricolage Grotesque", sans-serif;
+	font-family: "Mooli", sans-serif;
+	overflow-wrap: break-word;
+	width: 100%;
+	text-align: center;
+}
+
+#hintSpanTxt {
+	font-size: 20px;
+	text-decoration: underline;
+	text-underline-offset: 5px;
+}
+
+#hintSpanTxt::before,
+#hintSpanTxt::after {
+	content: "\00a0";
+}
+
+#errorParagraph {
+	border: 2px solid black;
+	height: 60%;
+	width: 100%;
+}
+
+#checkTryBtn {
+	all: unset;
+	display: flex;
+	align-items: center;
+	position: relative;
+	padding: 0px 50px;
+	border: mediumspringgreen solid 0.15em;
+	border-radius: 0.25em;
+	color: mediumspringgreen;
+	font-size: 20px;
+	font-weight: 600;
+	cursor: pointer;
+	background-color: black;
+	margin-bottom: 10px;
+	overflow: hidden;
+	transition: border 300ms, color 300ms;
+	user-select: none;
+}
+
+#checkTryBtn:hover {
+	color: white;
+}
+
+#checkTryBtn:active {
+	border-color: teal;
+}
+
+#checkTryBtn::before,
+#checkTryBtn::after {
+	content: "";
+	position: absolute;
+	width: 9em;
+	aspect-ratio: 1;
+	background: mediumspringgreen;
+	opacity: 50%;
+	border-radius: 50%;
+	transition: transform 500ms, background 300ms;
+}
+
+#checkTryBtn::before {
+	left: 0;
+	transform: translateX(-8em);
+}
+
+#checkTryBtn::after {
+	right: 0;
+	transform: translateX(8em);
+}
+
+#checkTryBtn:hover:before {
+	transform: translateX(-1em);
+}
+
+#checkTryBtn:hover:after {
+	transform: translateX(1em);
+}
+
+#checkTryBtn:active::after,
+#checkTryBtn:active::before {
+	background-color: teal;
+}
+
+#checkTryBtn p {
+	z-index: 1;
+}
+
+.disable {
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+.incomplete {
+	background-color: #b6e1e7;
+}

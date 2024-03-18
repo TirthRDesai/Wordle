@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<link rel="stylesheet" href="index.css" />
+		<script src="data.js"></script>
+		<script src="index.js"></script>
+	</head>
+	<body>
+		<div id="containerDiv">
+			<div class="trialDiv incomplete" id="try1Div">
+				<input
+					type="text"
+					class="inputWordleLetter alphabet1"
+					id="alphabet1"
+					maxlength="1"
+				/>
+				<input
+					type="text"
+					class="inputWordleLetter alphabet2"
+					id="alphabet2"
+					maxlength="1"
+				/>
+				<input
+					type="text"
+					class="inputWordleLetter alphabet3"
+					id="alphabet3"
+					maxlength="1"
+				/>
+				<input
+					type="text"
+					class="inputWordleLetter alphabet4"
+					id="alphabet4"
+					maxlength="1"
+				/>
+				<input
+					type="text"
+					class="inputWordleLetter alphabet5"
+					id="alphabet5"
+					maxlength="1"
+				/>
+			</div>
+			<div class="trialDiv remaining" id="try2Div">
+				<input
+					type="text"
+					class="inputWordleLetter alphabet1"
+					id="alphabet6"
+					maxlength="1"
+				/>
+				<input
+					type="text"
+					class="inputWordleLetter alphabet2"
+					id="alphabet7"
+					maxlength="1"
+				/>
+				<input
+					type="text"
+					class="inputWordleLetter alphabet3"
+					id="alphabet8"
+					maxlength="1"
+				/>
+				<input
+					type="text"
+					class="inputWordleLetter alphabet4"
+					id="alphabet9"
+					maxlength="1"
+				/>
+				<input
+					type="text"
+					class="inputWordleLetter alphabet5"
+					id="alphabet10"
+					maxlength="1"
+				/>
+			</div>
+			<div class="trialDiv remaining" id="try3Div">
+				<input
+					type="text"
+					class="inputWordleLetter alphabet1"
+					id="alphabet11"
+					maxlength="1"
+				/>
+				<input
+					type="text"
+					class="inputWordleLetter alphabet2"
+					id="alphabet12"
+					maxlength="1"
+				/>
+				<input
+					type="text"
+					class="inputWordleLetter alphabet3"
+					id="alphabet13"
+					maxlength="1"
+				/>
+				<input
+					type="text"
+					class="inputWordleLetter alphabet4"
+					id="alphabet14"
+					maxlength="1"
+				/>
+				<input
+					type="text"
+					class="inputWordleLetter alphabet5"
+					id="alphabet15"
+					maxlength="1"
+				/>
+			</div>
+			<div class="trialDiv remaining" id="try4Div">
+				<input
+					type="text"
+					class="inputWordleLetter alphabet1"
+					id="alphabet16"
+					maxlength="1"
+				/>
+				<input
+					type="text"
+					class="inputWordleLetter alphabet2"
+					id="alphabet17"
+					maxlength="1"
+				/>
+				<input
+					type="text"
+					class="inputWordleLetter alphabet3"
+					id="alphabet18"
+					maxlength="1"
+				/>
+				<input
+					type="text"
+					class="inputWordleLetter alphabet4"
+					id="alphabet19"
+					maxlength="1"
+				/>
+				<input
+					type="text"
+					class="inputWordleLetter alphabet5"
+					id="alphabet20"
+					maxlength="1"
+				/>
+			</div>
+			<div class="trialDiv remaining" id="try5Div">
+				<input
+					type="text"
+					class="inputWordleLetter alphabet1"
+					id="alphabet21"
+					maxlength="1"
+				/>
+				<input
+					type="text"
+					class="inputWordleLetter alphabet2"
+					id="alphabet22"
+					maxlength="1"
+				/>
+				<input
+					type="text"
+					class="inputWordleLetter alphabet3"
+					id="alphabet23"
+					maxlength="1"
+				/>
+				<input
+					type="text"
+					class="inputWordleLetter alphabet4"
+					id="alphabet24"
+					maxlength="1"
+				/>
+				<input
+					type="text"
+					class="inputWordleLetter alphabet5"
+					id="alphabet25"
+					maxlength="1"
+				/>
+			</div>
+			<div class="trialDiv remaining" id="try6Div">
+				<input
+					type="text"
+					class="inputWordleLetter alphabet1"
+					id="alphabet26"
+					maxlength="1"
+				/>
+				<input
+					type="text"
+					class="inputWordleLetter alphabet2"
+					id="27"
+					maxlength="1"
+				/>
+				<input
+					type="text"
+					class="inputWordleLetter alphabet3"
+					id="28"
+					maxlength="1"
+				/>
+				<input
+					type="text"
+					class="inputWordleLetter alphabet4"
+					id="29"
+					maxlength="1"
+				/>
+				<input
+					type="text"
+					class="inputWordleLetter alphabet5"
+					id="30"
+					maxlength="1"
+				/>
+			</div>
+		</div>
+
+		<div id="feedbackDiv">
+			<div id="hintDiv">
+				<p id="hintParagraph">
+					<span id="hintSpanTxt">HINT:</span><br /><br />
+					<span id="hintSpan"></span>
+				</p>
+			</div>
+			<div id="errorDiv">
+				<p id="errorParagraph"></p>
+				<button id="checkTryBtn" onclick="checkTrial()"><p>Check</p></button>
+			</div>
+		</div>
+	</body>
+</html>
